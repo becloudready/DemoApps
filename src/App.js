@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import WorldClock from './WorldClock';
 import CookieDisclaimer from './CookieDisclaimer';
+// import AdComponent from './AdComponent';
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
@@ -17,6 +18,7 @@ const App = () => {
         <h1>World Clock</h1>
         <WorldClock />
       </header>
+      {/* <AdComponent /> */}
       <CookieDisclaimer />
     </div>
   );
