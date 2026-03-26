@@ -8,7 +8,7 @@ import ReactGA from 'react-ga';
 
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize('G-ZTKLPD4Z2X'); // Replace with your Google Analytics tracking ID
+    ReactGA.initialize(process.env.REACT_APP_GA_ID);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
